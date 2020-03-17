@@ -25,5 +25,8 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-	
+    if (game.score() % 3 == 0) {
+        pause2 += -100
+        basic.pause(10000)
+    }
 })
