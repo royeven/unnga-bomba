@@ -13,6 +13,11 @@ let pause2 = 1000
 basic.forever(function () {
     bombe.change(LedSpriteProperty.Y, 1)
     basic.pause(pause2)
+    if (bombe.isTouching(spiller)) {
+        game.removeLife(1)
+    } else if (bombe.get(LedSpriteProperty.Y) == 4) {
+        game.addScore(Math.abs(spiller.get(LedSpriteProperty.X) - bombe.get(LedSpriteProperty.X)))
+    }
     if (bombe.get(LedSpriteProperty.Y) == 4) {
         bombe.set(LedSpriteProperty.Y, 0)
         bombe.set(LedSpriteProperty.X, Math.randomRange(0, 4))
