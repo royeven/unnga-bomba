@@ -20,17 +20,12 @@ To edit this repository in MakeCode.
 ## Test
 
 Test: 
-```blocks
-let y = 0
-let x = 0
-let bombet: game.LedSprite = null
-let sprite: game.LedSprite = null
-let nytt_skip: game.LedSprite = null
-let antall_skip = 0
-let mine_skip: game.LedSprite[] = []
-radio.setGroup(1)
-mine_skip = []
-antall_skip = 2
+``` blocks
+basic.forever(function () {
+basic.showIcon(IconNames.Heart)
+basic.pause(20)
+basic.showIcon(IconNames.SmallHeart)
+})
 ```
 
 
