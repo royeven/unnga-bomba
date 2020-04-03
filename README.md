@@ -17,6 +17,23 @@ To edit this repository in MakeCode.
 * click on **Import** then click on **Import URL**
 * paste **https://github.com/royeven/unnga-bomba** and click import
 
+## Test
+
+Test: 
+```javascript:
+let y = 0
+let x = 0
+let bombet: game.LedSprite = null
+let sprite: game.LedSprite = null
+let nytt_skip: game.LedSprite = null
+let antall_skip = 0
+let mine_skip: game.LedSprite[] = []
+radio.setGroup(1)
+mine_skip = []
+antall_skip = 2
+```
+
+
 ## Blocks preview
 
 This image shows the blocks code from the last commit in master.
