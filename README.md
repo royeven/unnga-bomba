@@ -20,7 +20,7 @@ To edit this repository in MakeCode.
 ## Test
 
 Test: 
-```javascript:
+```blocks
 let y = 0
 let x = 0
 let bombet: game.LedSprite = null
